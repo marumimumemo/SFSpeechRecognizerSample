@@ -113,6 +113,8 @@
         [recognitionRequest endAudio];
         self.button.enabled = NO;
         [self.button setTitle:@"停止中" forState: UIControlStateDisabled];
+        [recognitionTask cancel];
+        recognitionTask = nil;
     } else {
         [self startRecording];
         [self.button setTitle:@"音声認識を中止" forState: UIControlStateNormal];

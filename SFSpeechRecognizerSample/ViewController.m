@@ -23,7 +23,6 @@
     speechRecognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja-JP"]];
     //delegate
     speechRecognizer.delegate = self;
-    [self.button setEnabled:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

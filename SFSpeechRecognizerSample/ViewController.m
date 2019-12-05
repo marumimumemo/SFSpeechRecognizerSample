@@ -106,7 +106,7 @@
     NSLog(@"Say Something, I'm listening");
 }
 
-- (IBAction)microPhoneTapped:(id)sender {
+- (IBAction)buttonTapped:(id)sender {
     if (audioEngine.isRunning) {
         [audioEngine stop];
         [recognitionRequest endAudio];

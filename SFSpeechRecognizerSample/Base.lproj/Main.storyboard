@@ -28,7 +28,7 @@
                                 <rect key="frame" x="184" y="488.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="microPhoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVf-fi-HtY"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVf-fi-HtY"/>
                                 </connections>
                             </button>
                         </subviews>

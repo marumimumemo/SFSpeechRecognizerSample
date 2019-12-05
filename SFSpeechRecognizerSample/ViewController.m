@@ -31,7 +31,7 @@
     [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
         switch (status) {
             case SFSpeechRecognizerAuthorizationStatusAuthorized:
-                NSLog(@"Authorized");
+                NSLog(@"認証されました。");
                 break;
             case SFSpeechRecognizerAuthorizationStatusDenied:
                 NSLog(@"音声認識へのアクセスが拒否されています。");

@@ -23,6 +23,8 @@
     speechRecognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja-JP"]];
     //delegate
     speechRecognizer.delegate = self;
+    UIImage *backgroundImage  = [UIImage imageNamed:@"bg.png"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     self.label.text = @"音声認識アプリへようこそ。";
     self.label.textAlignment = UITextAlignmentCenter;
     [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];

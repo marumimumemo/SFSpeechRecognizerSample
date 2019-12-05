@@ -18,27 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv5-Kl-hvI">
+                                <rect key="frame" x="10" y="54" width="394" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="n0u-z9-ROy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlb-13-SUS">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <rect key="frame" x="184" y="654" width="46" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Edz-Yc-xWi"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="microPhoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVf-fi-HtY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv5-Kl-hvI">
-                                <rect key="frame" x="142" y="317" width="130" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="60" id="EiD-q2-uxY"/>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jml-Vk-RIC"/>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="60" id="MYR-ci-6Yw"/>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fW6-6w-Cel"/>
-                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pTd-xJ-JKz"/>
+                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8MF-jV-znA"/>
+                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="100" id="8ig-2j-QUl"/>
+                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="G5X-Gb-J53"/>
+                            <constraint firstItem="dlb-13-SUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LE2-CE-Ego"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xv5-Kl-hvI" secondAttribute="trailing" constant="10" id="iXZ-4i-lbx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -49,6 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>

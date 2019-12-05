@@ -23,6 +23,7 @@
     speechRecognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja-JP"]];
     //delegate
     speechRecognizer.delegate = self;
+    [self.button setEnabled:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -84,6 +85,10 @@
             [inputNode removeTapOnBus:0];
             self->recognitionRequest = nil;
             self->recognitionTask = nil;
+            
+            self.button.enabled = YES;
+            [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];
+            
         }
     }];
     
@@ -104,8 +109,11 @@
     if (audioEngine.isRunning) {
         [audioEngine stop];
         [recognitionRequest endAudio];
+        self.button.enabled = NO;
+        [self.button setTitle:@"停止中" forState: UIControlStateDisabled];
     } else {
         [self startRecording];
+        [self.button setTitle:@"音声認識を中止" forState: UIControlStateNormal];
     }
 }
 
@@ -113,6 +121,13 @@
 
 - (void)speechRecognizer:(SFSpeechRecognizer *)speechRecognizer availabilityDidChange:(BOOL)available {
     NSLog(@"Availability:%d",available);
+    if (available) {
+        self.button.enabled = YES;
+        [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];
+    } else {
+        self.button.enabled = NO;
+        [self.button setTitle:@"音声認識ストップ" forState: UIControlStateDisabled];
+    }
 }
 
 

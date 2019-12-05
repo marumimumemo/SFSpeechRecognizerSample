@@ -23,7 +23,7 @@
     speechRecognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja-JP"]];
     //delegate
     speechRecognizer.delegate = self;
-    self.label.text = @"ようこそ";
+    self.label.text = @"音声認識アプリへようこそ。さあはじめよう。";
     [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];
 }
 
@@ -102,7 +102,7 @@
     // Starts the audio engine, i.e. it starts listening.
     [audioEngine prepare];
     [audioEngine startAndReturnError:&error];
-    self.label.text = @"何か喋ってください";
+    self.label.text = @"何か喋ってください。なんでもいいですよん。";
     NSLog(@"Say Something, I'm listening");
 }
 
@@ -125,9 +125,6 @@
     if (available) {
         self.button.enabled = YES;
         [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];
-    } else {
-        self.button.enabled = NO;
-        [self.button setTitle:@"音声認識ストップ" forState: UIControlStateDisabled];
     }
 }
 

@@ -23,6 +23,8 @@
     speechRecognizer = [[SFSpeechRecognizer alloc] initWithLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja-JP"]];
     //delegate
     speechRecognizer.delegate = self;
+    self.label.text = @"ようこそ";
+    [self.button setTitle:@"音声認識スタート" forState: UIControlStateNormal];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -19,19 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv5-Kl-hvI">
-                                <rect key="frame" x="20" y="64" width="374" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="NwF-ll-qFT"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlb-13-SUS">
-                                <rect key="frame" x="184" y="584" width="46" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Snh-HT-E4W"/>
-                                </constraints>
+                                <rect key="frame" x="184" y="488.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="microPhoneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVf-fi-HtY"/>
@@ -40,11 +34,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="T6V-dR-79w"/>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="20" id="Woj-Mk-uDW"/>
-                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q83-DQ-DuT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xv5-Kl-hvI" secondAttribute="trailing" constant="20" id="tle-qW-gAj"/>
-                            <constraint firstItem="dlb-13-SUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8i-TN-tv7"/>
+                            <constraint firstItem="dlb-13-SUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1d4-aL-Eb8"/>
+                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5mF-Sm-39Q"/>
+                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Tf-y7-mJZ"/>
+                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="30" id="FOc-n0-TyK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xv5-Kl-hvI" secondAttribute="trailing" constant="20" id="HFX-QG-1ae"/>
+                            <constraint firstItem="dlb-13-SUS" firstAttribute="top" secondItem="Xv5-Kl-hvI" secondAttribute="bottom" constant="30" id="WPC-aC-cD0"/>
+                            <constraint firstItem="Xv5-Kl-hvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlj-y4-Zbb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
